@@ -31,49 +31,49 @@ jobs:
 
         # Check if the current day is Tuesday
         if [ "$current_day" == "Sunday" ]; then
-            for ((index=0; index<10; index++))
+            for ((index=0; index<30; index++))
             do
                 echo -n "0" >> $text_file
                 git add .
                 git commit -m "Automated commit on `date`"
             done
         elif [ "$current_day" == "Monday" ]; then
-            for ((index=0; index<7; index++))
+            for ((index=0; index<20; index++))
             do
                 echo -n "1" >> $text_file
                 git add .
                 git commit -m "Automated commit on `date`"
             done
         elif [ "$current_day" == "Tuesday" ]; then
-            for ((index=0; index<4; index++))
+            for ((index=0; index<10; index++))
             do
                 echo -n "0" > $text_file
                 git add .
                 git commit -m "Automated commit on `date`"
             done
         elif [ "$current_day" == "Wednesday" ]; then
-            for ((index=0; index<2; index++))
+            for ((index=0; index<5; index++))
             do
                 echo -n "1" >> $text_file
                 git add .
                 git commit -m "Automated commit on `date`"
             done
         elif [ "$current_day" == "Thursday" ]; then
-            for ((index=0; index<4; index++))
+            for ((index=0; index<10; index++))
             do
                 echo -n "0" > $text_file
                 git add .
                 git commit -m "Automated commit on `date`"
             done
         elif [ "$current_day" == "Friday" ]; then
-            for ((index=0; index<7; index++))
+            for ((index=0; index<20; index++))
             do
                 echo -n "1" > $text_file
                 git add .
                 git commit -m "Automated commit on `date`"
             done
         elif [ "$current_day" == "Saturday" ]; then
-            for ((index=0; index<10; index++))
+            for ((index=0; index<30; index++))
             do
                 echo -n "0" > $text_file
                 git add .
