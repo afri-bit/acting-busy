@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  play:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Repository
@@ -25,7 +25,7 @@ jobs:
 
         # Get the current day using the date command
         current_day=$(date +"%A")
-        text_file=${{ github.workspace }}/src/playground
+        text_file=${{ github.workspace }}/src/playground.txt
 
         echo "" >> $text_file
 
@@ -84,7 +84,7 @@ jobs:
         fi
 
     - name: Push Changes
-      uses: ad-m/github-push-action@v0.7.0
+      uses: ad-m/github-push-action@v0.8.0
       with:
         branch: master
         github_token: ${{ secrets.GH_PAT }}
