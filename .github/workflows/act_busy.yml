@@ -17,6 +17,7 @@ jobs:
       run: |
         git config --global user.email "afri-bot-gh@mail.bot"
         git config --global user.name "afri-bot"
+        git pull --all
 
     - name: Writing changes for commit
       shell: bash
